@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'EB Garamond', sans-serif;
+    font-family: 'EB Garamond', 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 1.4rem;
     background-color: #eeecec;
@@ -42,9 +44,8 @@ header {
     left: 0%;
     width: 100%;
     text-align: center;
-    display: flex;
     flex-direction: column;
-	display: none;
+    display: none;
 }
 
 .navbar-links.active {
@@ -57,7 +58,8 @@ header {
     text-decoration: none;
     font-size: 1.25rem;
 	padding: 0.5rem;
-	text-transform: capitalize;
+    text-transform: capitalize;
+    transition-duration: 200ms;
 }
 
 .navbar-links li a:hover {
@@ -96,8 +98,8 @@ header {
 
 .my-img img {
 	margin: 2rem;
-	border-radius: 40%;
-	width: 18rem;
+    border-radius: 40%;
+    width: 18rem;
 	height: 24rem;
 }
 
@@ -147,9 +149,7 @@ header {
     font-size: 1.5rem;
     text-decoration: none;
     color: #000;
-    /* outline: 1px solid red; */
     padding: 0 2rem;
-    /* border-radius: 50%; */
 }
 
 .contact ul li a:hover {
